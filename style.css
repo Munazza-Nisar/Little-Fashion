@@ -34,6 +34,7 @@ h2, h3, h4, h5, h6 {
 h1{
     font-size: 4rem;
     font-weight: var(--font-weight-black);
+    color: #212529!important;
 }
 h2{
     font-size: 2.625rem;
@@ -61,6 +62,7 @@ span{
   }
 .wrap{
     max-width: 1400px;
+    margin: 0 auto;
 }
 .container{
     width: 1140px;
@@ -103,6 +105,9 @@ span{
     color: var(--white-color);
     padding: 14rem 0;
     
+}
+.design_content > h1{
+    color: var(--white-color) !important;
 }
 .design_content > p{
     padding: 1.5rem 0;
@@ -384,3 +389,364 @@ span{
 .product{
     padding-bottom: 6.8rem;
 }
+/*......................................... product page.........................................  */
+.top_story{
+    background-color: var(--section-bg-color);
+   
+}
+.product_img > img{
+    width: 100%;
+}
+.story{
+    display: flex;
+    justify-content: space-between;
+}
+.story_heading{
+    padding: 9rem 0 0 7rem  ;
+}
+.story_img > img{
+    width: 42rem;
+}
+/*......................................... team page.........................................  */
+.team{
+    background-color: var(--grey-color);
+    padding: 4rem 0;
+
+}
+.team_heading{
+    padding: 2rem 0;
+}
+.team_block{
+    display: flex;
+    justify-content: space-between;
+}
+.team_box{
+    display: flex;
+    justify-content: space-between;
+    background: var(--white-color);
+    padding: 2.1rem 1.9rem;
+    border-radius: 0.25rem;
+    gap: 1rem;
+}
+/* block starts */
+.block_img > img{
+    width: 5.313rem;
+    border-radius: 7rem;
+}
+.block_info{
+    padding: 1.2rem 2.5rem 1.2rem 0;
+   
+}
+.block_info > p{
+    color: #6c757d!important;
+    font-weight: var(--font-weight-bold);
+    line-height: 2rem;
+}
+.block_popup{
+    margin: 1.6rem 0;
+    background: var(--grey-color);
+    border-radius: 0.2rem;
+    padding: 1rem 1rem 0 1rem;
+}
+.block_popup > a{
+    background-color: var(--white-color);
+    border-radius: 2rem;
+    color: var(--grey-color);
+    padding: 0 0.3rem;
+}
+.block_popup > a:hover{
+    background-color: #212529;
+    color: var(--white-color);
+}
+/* customer starts */
+.customer{
+    
+    margin: 7rem auto;
+    width: 51.938rem;
+}
+.customer_heading{
+    text-align: center;
+}
+.comma i{
+    color: var(--primary-color);
+    font-size: 4rem;
+}
+.customer_text>p{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-thin);
+    padding-bottom: 2rem;
+}
+.customer_user {
+    display: flex;
+    gap: 1rem;
+  }
+.customer_user >img{
+    width: 3.438rem;
+    border-radius: 7rem;
+    
+}
+.customer_text{
+    padding: 0 6rem;
+}
+.customer_user >p{
+    color: #212529;
+    padding-top: 1rem;
+}
+.customer_user >p strong{
+    color: #6c757d!important;
+}
+/*......................................... contact page.........................................  */
+.contact_form{
+    margin: 7.44rem 0 5.5rem 0;
+}
+.contact_form_heading > h2::after{
+    content: "begin";
+    color: var(--primary-color);
+}
+.contact{
+    display: flex;
+    justify-content: left;
+    gap: 5rem;
+}
+
+.form {
+  margin: 2rem 0;
+}
+.form >input{
+    display: block;
+    width: 30.2rem;
+    padding: 1.24rem 1rem;
+    margin: 1.5rem 0;
+    border-radius: 0.3rem;
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+    outline: none;
+}
+.form > textarea{
+    display: block;
+    width: 30.2rem;
+    padding: 1.24rem 1rem;
+   
+    border-radius: 0.3rem;
+    color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+    outline: none;
+}
+.button{
+    margin: 2.5rem 0;
+}
+.button > a{
+    border-radius: 3rem;
+    padding: 1rem 4.8rem;
+    color: var(--white-color);
+    background-color: #000000;
+    text-transform: uppercase;
+    font-weight: var(--font-weight-bold);
+}
+.company{
+    margin: 10rem 0;
+}
+.company_info{
+  
+    display: flex;
+    justify-content: center;
+}
+
+.company_address:first-child{
+    border-right: 1px solid var(--grey-color);
+    
+}
+.company_address>.company_block_1{
+    border-bottom: 1px solid var(--grey-color);
+    padding: 2rem 3rem ;
+    line-height: 3rem;
+}
+.company_address>.company_block_2{
+    padding: 2rem 3rem ;
+    line-height: 3rem;
+}
+.company_address:first-child>.company_block_2>p{
+    line-height: 2rem;
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-light);
+    color: #6c757d!important;
+}
+.company_address:last-child .company_block_1{
+   padding-left: 3rem;
+
+}
+.company_block_1> a{
+    color: var(--p-color);
+    font-size: var(--custom-link-font-size);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+}
+.company_block_1> a:hover{
+    color: var(--primary-color);
+}
+.company_block_1> a:hover::after{
+    content: "->";
+}
+.company_address:last-child .company_block_2{
+    padding-left: 3rem;
+ }
+ .company_address:last-child>.company_block_2>a{
+    color: #6c757d;
+    font-size: 1rem;
+    padding-right: 1rem;
+ }
+ .company_address:last-child>.company_block_2>a:hover{
+    color: var(--primary-color);
+ }
+ /*......................................... cart page.........................................  */
+ .cart{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 7rem ;
+ }
+ .cart_img >img{
+    width: 35rem;
+ }
+ .cart_details{
+    margin-top: 3rem;
+ }
+ .cart_details_heading{
+    display: flex;
+    justify-content: space-between;
+ }
+ .heading > p{
+    font-size: var(--product-link-font-size);
+    color: var(--p-color);
+    line-height: 2rem;
+ }
+ .prices>p{
+    font-size: var(--product-link-font-size);
+    color: var(--p-color);
+    line-height: 4.5rem;
+   
+ }
+ .description{
+    margin-top: 4.6rem;
+ }
+ .description >strong{
+   line-height: 3rem;
+ }
+ .description >p{
+    font-size: 1.5rem;
+    font-weight: var(--font-weight-thin);
+    
+ }
+ .top_btn{
+    margin: 4rem 0 3rem 0;
+   
+ }
+ .top_btn > a:first-child{
+    font-size: var(--product-link-font-size);
+    padding: 1rem 1rem;
+    border: 1px solid var(--grey-color);
+    text-transform: uppercase;
+    color: #000000;
+
+    
+ }
+ .top_btn > a:first-child > small{
+    padding-left: 7.5rem;
+ }
+ .top_btn > a:last-child{
+    font-size: var(--product-link-font-size);
+    padding: 1rem 4.5rem;
+    background-color: #000000;
+    text-transform: uppercase;
+    color: var(--white-color);
+    margin-left: 1.5rem;
+ }
+ .top_btn > a:last-child:hover{
+    background-color: var(--primary-color);
+ }
+ .bottom_btn> a{
+    color: var(--p-color);
+    font-size: var(--product-link-font-size);
+    margin-top: 2rem;
+    margin-right: 0.75rem;
+ }
+ /*......................................... cart page.........................................  */
+ .login_pg{
+    margin: 7rem 0;
+    text-align: center;
+ }
+ .login_form > input{
+    display: block;
+    width: 30.063rem;
+    padding: 1.3rem ;
+    margin: 1.5rem auto;
+    border-radius: 5px;
+    border: 1px solid var(--grey-color);
+    color: var(--grey-color);
+    font-size: 1rem;
+ }
+ 
+ .login_form >a{
+    display: block;
+    margin: 1.5rem auto;
+    width: 30.063rem;
+    background-color: #000000;
+    color: var(--white-color);
+    padding: 1.3rem ;
+    text-align: center;
+    border-radius: 3rem;
+    text-transform: uppercase;
+ }
+ .login_form >a:hover{
+    background-color: var(--primary-color);
+ }
+ .login_form >p{
+    color: var(--p-color);
+    font-size: var(--p-font-size);
+    font-weight: var(--font-weight-light);
+ }
+ .login_form >p a{
+    color: var(--p-color);
+ }
+ .login_form >p a:hover{
+    color: var(--primary-color);
+ }
+ .accounts_signup > a{
+    display: block;
+    margin: 1.5rem auto;
+    width: 22.7rem;
+    padding: 1.3rem ;
+    text-align: center;
+    border-radius: 3rem;
+   
+    color: var(--dark-color);
+    font-size: var(--copyright-text-font-size);
+    border: 1px solid var(--grey-color);
+ }
+ .accounts_signup > a  i{
+    padding-right: 1rem;
+ }
+ .accounts_signup > a:hover{
+    color: var(--white-color);
+    background-color: var(--primary-color);
+ }
+ hr{
+    width: 22.7rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: var(--grey-color);
+    border: 1px solid var(--grey-color);
+ }
+ .login_pg small{
+    display: block;
+    position: relative;
+    top: -0.5rem;
+    background: var(--white-color);
+    color: var(--dark-color);
+    font-weight: var(--font-weight-bold);
+    font-size: 0.875rem;
+    width: 2.2rem;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+ }

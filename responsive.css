@@ -7,6 +7,9 @@
 }
 
 @media screen and (max-width: 576px) {
+    h1{
+        font-size: 2.5rem;
+    }
     h2 {
         font-size: 2rem;
     }
@@ -93,6 +96,9 @@
         padding: 1rem 2rem !important;
     }
     /* products */
+    .top_product_heading > h1{
+        text-align: center;
+     }
     .products{
         margin-top: 3rem;
     }
@@ -113,6 +119,108 @@
     }
     .footer_col_2_2{
         padding: 0;
+    }
+    /*......................................... story page.........................................  */
+    .story{
+        flex-direction: column;
+        align-items: center;
+    }
+    .story_heading {
+        padding: 6rem 0 6rem 0rem;
+    }
+    .story_img > img {
+        width: 100%;
+    }
+    .team_heading{
+        text-align: center;
+    }
+    .team_block{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .customer{
+        width: auto;
+        margin:  2rem;
+    }
+     /*......................................... contact page.........................................  */
+     .contact{
+        flex-direction: column;
+     align-items: center;
+       }
+    .contact_form {
+        margin: 7.44rem 0 0.5rem 0;
+    }
+    .company {
+        margin: 0 0 8rem 0;
+    }
+    .company_info{
+        flex-direction: column;
+        align-items: center;
+    }
+    .company_address > .company_block_1 , .company_block_2{
+        border: none;
+    }
+    .company_address:first-child{
+        border: none;
+    }
+    .form >input , textarea{
+        width: 100% !important;
+    }
+    .button{
+        text-align: center;
+    }
+    .button > a{
+        padding: 1rem 2.8rem;
+        
+    }
+    .company_address:last-child .company_block_2 {
+        padding-left: 1rem;
+    }
+    .company_address:last-child .company_block_1{
+        padding-left: 1rem;
+    }
+    /*......................................... cart page.........................................  */
+    .cart{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem ;
+    }
+    .cart_img >img{
+        width: 100%;
+     }
+    .cart_details{
+        width: 100%;
+        margin: 0 2rem !important;
+    }
+    .top_btn > a{
+        display: block;
+        width: 100%;
+    }
+   
+    .top_btn > a:first-child > small {
+        padding-left: 15.5rem;
+    }
+    .top_btn > a:last-child{
+        margin: 1.5rem 0;
+        text-align: center;
+    }
+    /*......................................... cart page.........................................  */
+    .login_pg{
+        margin: 3rem 2rem;
+    }
+    .login_form > input{
+        width: 100%;
+    }
+    .login_form >a{
+        width: 100%;
+    }
+    .accounts_signup > a{
+        width: 100%;
+    }
+    hr{
+        width: 100%;
     }
 }
 
@@ -172,6 +280,9 @@
         padding: 1rem 3rem !important;
     }
     /* products */
+    .top_product_heading > h1{
+        text-align: center;
+     }
     .products_content{
         flex-direction: column;
         align-items: center;
@@ -192,6 +303,68 @@
     }
     .footer_col_2_2{
         padding: 0;
+    }
+     /*......................................... story page.........................................  */
+     .story{
+        flex-direction: column;
+        align-items: center;
+    }
+    .story_heading {
+        padding: 6rem 0 6rem 0rem;
+    }
+    .story_img > img {
+        width: 100%;
+    }
+    .team_heading{
+        text-align: center;
+    }
+    .team_block{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .customer{
+        width: auto;
+        margin: 2rem;
+    }
+     /*......................................... contact page.........................................  */
+     .contact{
+        flex-direction: column;
+     align-items: center;
+       }
+    .contact_form {
+        margin: 7.44rem 0 0.5rem 0;
+    }
+    .company {
+        margin: 0 0 8rem 0;
+    }
+     /*......................................... cart page.........................................  */
+     .cart{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem ;
+    }
+    .cart_img >img{
+        width: 100%;
+     }
+    .cart_details{
+        width: 30rem;
+        margin: 0 auto;
+    }
+    .top_btn > a{
+        display: block;
+        width: 100%;
+    }
+    .top_btn > a:first-child{
+
+    }
+    .top_btn > a:first-child > small {
+        padding-left: 22.5rem;
+    }
+    .top_btn > a:last-child{
+        margin: 1.5rem 0;
+        text-align: center;
     }
 }
 
@@ -253,6 +426,9 @@
         padding: 0rem 0 0rem 4.5rem !important;
     }
     /* products */
+    .top_product_heading > h1{
+       text-align: center;
+    }
     .products_content{
         flex-direction: column;
         align-items: center;
@@ -270,6 +446,54 @@
     }
     .footer_content{
         gap: 3rem;
+    }
+    /*......................................... story page.........................................  */
+    .story{
+        flex-direction: column;
+        align-items: center;
+    }
+    .story_heading {
+        padding: 6rem 0 6rem 0rem;
+    }
+    .story_img > img {
+        width: 100%;
+    }
+    .team_heading{
+        text-align: center;
+    }
+    .team_block{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .customer{
+        width: auto;
+        margin:  2rem;
+    }
+    /*......................................... contact page.........................................  */
+    .contact{
+        flex-direction: column;
+     align-items: center;
+       }
+    .contact_form {
+        margin: 7.44rem 0 0.5rem 0;
+    }
+    .company {
+        margin: 0 0 8rem 0;
+    }
+      /*......................................... cart page.........................................  */
+      .cart{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-top: 3rem ;
+    }
+    .cart_img >img{
+        width: 100%;
+     }
+    .cart_details{
+        width: 39rem;
+        margin: 0 auto;
     }
 }
 
@@ -322,5 +546,40 @@
     }
     .footer_content{
         gap: 7rem;
+    }
+    /*......................................... story page.........................................  */
+    .story_heading {
+        padding: 6rem 0 0 4rem;
+    }
+    .story_img > img {
+        width: 32rem;
+    }
+    .ideas_heading{
+
+    }
+      /*......................................... contact page.........................................  */
+    .contact {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .form >input,textarea {
+    width: 25.5rem;
+    }
+    .form >textarea {
+        width: 25.5rem;
+        }
+    /*......................................... cart page.........................................  */
+    .cart{
+        gap: 2rem;
+    }
+    .top_btn > a:first-child {
+        padding: 1rem 0.5rem;
+    }
+    .top_btn > a:first-child > small {
+        padding-left: 2rem;
+    }
+    .top_btn > a:last-child {
+        padding: 1rem 1.5rem;
     }
 }
