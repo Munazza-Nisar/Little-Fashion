@@ -73,12 +73,46 @@
                         <strong>Description</strong>
                         <p>Over three years in business, We’ve had the chance to work on a variety of projects, with companies</p>
                         <div class="top_btn">
-                            <a href="">
+                            <a class="dropdown active" href="#">
                                 Quantity    <small><i class="fa-solid fa-caret-down"></i></small>
                             </a>
-                            <a href="">add to cart</a>
+                            <div class="d_menu">
+                                <p class="d-link">1</p>
+                                <p class="d-link">2</p>
+                                <p class="d-link">3</p>
+                                <p class="d-link">4</p>
+                                <p class="d-link">5</p>
+                            </div>
+                           
+                            <a id="myBtn" href="">add to cart</a>
                         </div>
                         
+                        <div id="myModal" class="modal">
+                            <small class="close">&times;</small>
+                            <div class="modal-content">
+                            <div class="modal_details">
+                                <div class="modal_img">
+                                    <img src="./images/product1.jpeg" alt="">
+                                </div>
+                                <div class="modal_text">
+                                    <div class="modal_title">
+                                        <h2>Tree pot</h2>
+                                        <p class="dollar">$25</p>
+                                        <p class="product_p">Quatity: 4</p>
+                                        <p class="product_p">Colour: Black</p>
+                                        <p class="product_p p_1">Size: S/S</p>
+                                        <div class="total">
+                                            <p>Total: $100</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal_btn">
+                                <a href="">chechout</a>
+                            </div>
+                            </div>
+                        </div>
+
                         <div class="bottom_btn">
                             <a href="">Details</a>
                             <a href="">Delivery and Payment</a>
@@ -178,25 +212,25 @@
             <div class="footer_bg">
                 <div class="footer_content container">
                     <div class="footer_col_1">
-                        <h4><span>Little</span> Fashion</h4>
-                        <p>Copyright © 2022 <span>Little Fashion</span></p>
-                        <br>
-                        <p>Designed by Tooplate</p>
+                        <h4> <a href="">Little</a> Fashion</h4>
+                        <p class="copyrigth">Copyright © 2022 </p>
+                       
+                        <p>Designed by <a href="">Tooplate</a> </p>
                     </div>
                     <div class="footer_col_2">
                         <div class="footer_heading">
                             <h5>Sitemap</h5>
                         </div>
 
-                        <a href="">Story</a>
+                        <a href="story.html">Story</a>
                         
-                        <a href="">Privacy policy</a>
+                        <a href="#">Privacy policy</a>
                         
-                        <a href="">Contact</a>
+                        <a href="contact.html">Contact</a>
                     </div>
-                    <div class="footer_col_2_2">
-                        <a href="">Products</a>
-                        <a href=""> FAQs</a>
+                    <div class="footer_col_2_2 footer_col_2">
+                        <a href="products.html">Products</a>
+                        <a href="FAQs.html"> FAQs</a>
                     </div>
                     <div class="footer_col_3">
                         <div class="footer_heading">
@@ -220,6 +254,39 @@
 
 
     </div>
+
+
+
+
+
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+        </script>
 </body>
 
 </html>

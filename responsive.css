@@ -222,7 +222,20 @@
     hr{
         width: 100%;
     }
+
+
+    .FAQ_block{
+        margin: 7rem 0;
+        padding: 0 2rem;
+        width: 100%;
+    }
+    .FAQ_link >img{
+        position: absolute;
+        left: 27rem;
+       
+    }
 }
+
 
 @media (min-width: 576px) and (max-width: 767px) {
     .container {
@@ -366,6 +379,16 @@
         margin: 1.5rem 0;
         text-align: center;
     }
+
+    .FAQ_block{
+        margin: 7rem 2rem;
+        width: 32rem;
+    }
+    .FAQ_link >img{
+        position: absolute;
+        left: 29rem;
+       
+    }
 }
 
 @media (min-width: 767px) and (max-width: 992px) {
@@ -494,6 +517,17 @@
     .cart_details{
         width: 39rem;
         margin: 0 auto;
+    }
+
+
+    .FAQ_block{
+        margin: 7rem 2rem;
+        width: 45rem;
+    }
+    .FAQ_link >img{
+        position: absolute;
+        left: 43rem;
+       
     }
 }
 
