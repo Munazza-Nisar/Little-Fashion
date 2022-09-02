@@ -5,10 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Litile Fashion</title>
+    <title>Litile Fashion | Story</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <script src="https://kit.fontawesome.com/057571cba5.js" crossorigin="anonymous"></script>
+   
     <link rel="stylesheet" href="responsive.css">
 </head>
 
@@ -79,19 +80,30 @@
                             </div>
                             <div class="block_popup">
                                 <div class="circle">
-                                    <a  id="mybtn2" href="">+</a>
+                                    <!-- <a  id="mybtn2" href="">+</a> -->
+                                    <button id="mybtn">+</button>
                                 </div>
                                
                             </div>
-                            <div class="modal_2 " id="myModal2">
+                            <div class="modal_2 " id="myModal">
+                             
                                 <div class="modal_details_2">
+                                    
+                                    <!-- <img src="https://img.icons8.com/fluency-systems-filled/34/717275/delete-sign.png"/> -->
+                                    <!-- <button type="button" class="exit" data-bs-dismiss="modal" aria-label="exit"></button> -->
                                     <div class="modal_2_titel">
+                                        <span class="close"></span>
+                                       
                                         <h2>Don Haruko</h2>
+
+                                        <p></p>
                                         <h6>Product, VP</h6>
                                     </div>
                                     <div class="modal_2_details">
+                                       
                                         <h5>Over three years in business had the chance to work on variety of projects, with companies</h5>
                                         <div class="modal_txt">
+                                           
                                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                             <p>Incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse commodo viverra.</p>
                                         </div>
@@ -280,18 +292,13 @@
     </div>
 
 
+
 <script>
-     Document.body.scrollTop = 0
-</script>
-
-    <script>
-
-      
-        // Get the modal
-        var modal = document.getElementById("myModal2");
+      // Get the modal
+      var modal = document.getElementById("myModal");
         
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn2");
+        var btn = document.getElementById("myBtn");
         
         // Get the <span> element that closes the modal
         var span = document.getElementsByClassName("close")[0];
@@ -314,7 +321,9 @@
 
          
         }
-        </script>
+
+</script>
+   
 </body>
 
 </html>

@@ -83,12 +83,12 @@ span{
     color: var(--white-color);
     background: var(--primary-color);
   }
-  .wrap{
-    max-width: 1400px;
+.wrap{
+    width: 100%;
     margin: 0 auto;
 }
 .container{
-    max-width: 1140px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
 }
@@ -520,14 +520,14 @@ span{
     
 }
 .modal_2{
-    display: none; /* Hidden by default */
+    display: none;
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 20px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
-    height: 100%; /* Full height */
+    
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(0,0,0); /* Fallback color */
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
@@ -548,16 +548,48 @@ span{
     animation-duration: 0.4s
   }
 
-  /* Add Animation */
-@-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0} 
-    to {top:0; opacity:1}
+.close {
+    
+    background-color: pink;
+    background-color: var(--white-color);
+    border: none;
+    position: absolute;
+    top: 1rem;
+    left: 23rem;
+    right: 0;
+    z-index: 1;
   }
-  
-  @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+  /* .exit::after{
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+    color: var(--p-color);
+    font-size: 3rem;
+    z-index: 1;
+    
+  } */
+  .exit::after:hover{
+    color: #212529;
+  } 
+/* .modal_details_2 >.exit{
+    background-color: var(--white-color);
+    border: none;
+    position: relative;
+    top: 1rem;
+    left: 46rem;
+    right: 0;
   }
+  .modal_details_2 >.exit::after{
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+    color: var(--p-color);
+    font-size: 3rem;
+    z-index: 1;
+    
+  } */
 /* block starts */
 .block_img > img{
     width: 5.313rem;
@@ -591,16 +623,15 @@ span{
 .circle:hover{
     background-color: #212529;
 }
-.circle > a{
-    
-   
+.circle > button{
     color: var(--grey-color);
-    
-    
+    border: none;
+    cursor: pointer;
+    background-color: var(--white-color);
     
 }
-.circle > a:hover{
-   
+.circle > button:hover{
+    background-color: #212529;
     color: var(--white-color);
     
 }
@@ -787,7 +818,7 @@ span{
     margin: 4rem 0 3rem 0;
    
  }
- .top_btn > a:first-child{
+ .top_btn > a{
     font-size: var(--product-link-font-size);
     padding: 1rem 1rem;
     border: 1px solid var(--grey-color);
@@ -799,15 +830,16 @@ span{
  .top_btn > a:first-child > small{
     padding-left: 7.5rem;
  }
- .top_btn > a:last-child{
+ .top_btn > button{
     font-size: var(--product-link-font-size);
     padding: 1rem 4.5rem;
     background-color: #000000;
     text-transform: uppercase;
     color: var(--white-color);
     margin-left: 1.5rem;
+    border: none;
  }
- .top_btn > a:last-child:hover{
+ .top_btn > button:hover{
     background-color: var(--primary-color);
  }
  .bottom_btn> a{
@@ -821,11 +853,11 @@ span{
  }
  .d_menu{
     position: absolute;
-    top: 2rem;
+    top: 3rem;
     
     background-color: var(--white-color);
     border: 1px solid #dee2e6;
-    width: 15.1rem;
+    width: 16rem;
     
     opacity: 0;
  }
@@ -843,21 +875,29 @@ span{
     opacity: 1;
  }
 
+ .dropdown::after{
+    content: "\f0d7";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #212529;
+    padding-left: 8rem;
+    
+ }
+
 /* cart modal */
-/* .modal{
-    width: 64rem !important;
-    margin: 0 auto;
-    background-color: var(--white-color);
-} */
+
 .modal_details{
     display: flex;
     justify-content: start;
     border-bottom: 1px solid var(--grey-color);
     gap: 1.5rem;
-    padding: 4rem;
+    padding: 1rem 4rem 3.77rem 4rem;
 }
 .modal_img > img{
     width: 20.25rem;
+}
+.modal_text{
+    width: 100%;
 }
 .modal_title >p.dollar{
     margin-top: 1rem!important;
@@ -881,25 +921,56 @@ span{
 }
 .modal_btn{
     text-align: right;
-    margin: 3.2rem  2.7rem ;
+    margin: 3.4rem  2.7rem ;
 }
 .modal_btn >a{
     font-size: var(--product-link-font-size);
-    padding: 1rem 8rem;
+    padding: 1.25rem 8rem;
     background-color: #000000;
     text-transform: uppercase;
     color: var(--white-color);
    
 }
+
+
+
+
+.close {
+    cursor: pointer;
+    background-color: var(--white-color);
+    border: none;
+    position: relative;
+    top: 1.6rem;
+    left: 46rem;
+    right: 0;
+  }
+  .close> img:hover{
+    fill: #000000;
+    
+  }
+  /* .close::after{
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+    color: var(--p-color);
+    font-size: 3rem;
+    z-index: 1;
+    
+  }
+  .close::after:hover{
+    color: #212529;
+  }  */
+ 
 .modal{
-    display: none; 
+    display: none;
     position: fixed; 
     z-index: 1; 
-    padding-top: 100px; 
+    padding: 2rem 0 3rem; 
     left: 0;
     top: 0;
     width: 100%; 
-    height: 100%; 
+    
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
@@ -914,10 +985,41 @@ span{
     width: 50rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
+    -webkit-animation-duration: 0.6s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.6s
   }
+  /* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+  }
+  /* .modal-content >.close{
+    background-color: var(--white-color);
+    border: none;
+    position: relative;
+    top: 1rem;
+    left: 46rem;
+    right: 0;
+  }
+  .modal-content >.close::after{
+    cursor: pointer;
+    font-family: "Font Awesome 5 Free";
+    content: "\f00d";
+    font-weight: 900;
+    color: var(--p-color);
+    font-size: 3rem;
+    z-index: 1;
+    
+  }
+  .modal-content >.close::after:hover{
+    color: #212529;
+  } */
  /*......................................... login page.........................................  */
  .login_pg{
     margin: 7rem 0;
@@ -1017,37 +1119,34 @@ span{
 .FAQ_heading{
     padding: 2rem 0;
 }
-.FAQ_link{
+/* .FAQ_link{
     border-bottom: 1px solid var(--grey-color);
-}
-.FAQ_link >a{
+} */
+.FAQ_dropdown>button{
     font-size: 1.5rem;
     font-weight: var(--font-weight-normal);
     padding: 1.5rem 0 ;
     color: #212529;
     outline: none;
-}
-.FAQ_link {
-   display: flex;
-   justify-content: space-between;
-}
-.FAQ_link >img{
-   object-fit: contain;
-    
-   
-}
-.dropdown_text{
+    background-color: var(--white-color);
     border-bottom: 1px solid var(--grey-color);
+}
+
+.dropdown_text{
+   
     padding-bottom: 2rem;
 }
 .dropdown_text >p{
     color: var(--p-color);
     font-size: var(--p-font-size);
     font-weight: var(--font-weight-light);
+    padding: 2rem 0;
+    border-bottom: 1px solid var(--grey-color);
 
 }
 .dropdown_text >.bold{
     padding-bottom: 1rem;
+    border: none;
 }
 .dropdown_text >.bold::before{
     content: "Little Fashion";
@@ -1066,8 +1165,17 @@ span{
     font-size: 15px;
     transition: 0.4s;
   }
+  .accordion:after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f107";
+    font-weight: 900;
+    color: #212529;
+    float: right;
+    margin-left: 5px;
+  }
+  
   .panel {
-    padding: 0 18px;
+    padding: 0;
     background-color: white;
     max-height: 0;
     overflow: hidden;

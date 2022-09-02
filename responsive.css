@@ -139,9 +139,21 @@
         align-items: center;
         gap: 2rem;
     }
+    .team_box{
+        flex-direction: column;
+        align-items: center;
+    }
+    .block_info {
+        padding: 0  2.2rem ;
+        text-align: center;
+    }
     .customer{
         width: auto;
         margin:  2rem;
+    }
+    .customer_user{
+        flex-direction: column;
+        align-items: center;
     }
      /*......................................... contact page.........................................  */
      .contact{
@@ -191,20 +203,38 @@
         width: 100%;
      }
     .cart_details{
-        width: 100%;
+        
         margin: 0 2rem !important;
     }
+    .dropdown{
+        display: flex;
+        justify-content: space-between !important;
+    
+     }
+     .d_menu{
+        top: 3.2rem;
+        width: 100%;
+     }
+    .dropdown::after{
+        padding-left: 0rem ;
+     }
     .top_btn > a{
-        display: block;
+     
         width: 100%;
     }
    
     .top_btn > a:first-child > small {
         padding-left: 15.5rem;
     }
-    .top_btn > a:last-child{
+    .top_btn > button{
+        display: block;
+        width: 100%;
         margin: 1.5rem 0;
         text-align: center;
+    }
+    .modal_details{
+        flex-direction: column;
+        align-items: center;
     }
     /*......................................... cart page.........................................  */
     .login_pg{
@@ -222,6 +252,7 @@
     hr{
         width: 100%;
     }
+    
 
 
     .FAQ_block{
@@ -365,19 +396,33 @@
         width: 30rem;
         margin: 0 auto;
     }
+    .dropdown{
+        display: flex !important;
+        justify-content: space-between;
+    
+     }
+     .d_menu{
+        width: 100%;
+     }
+     .dropdown::after{
+        padding-left: 0rem !important;
+     }
     .top_btn > a{
-        display: block;
+        /* display: block; */
         width: 100%;
     }
-    .top_btn > a:first-child{
-
-    }
+   
     .top_btn > a:first-child > small {
         padding-left: 22.5rem;
     }
-    .top_btn > a:last-child{
+    .top_btn > button{
+        width: 100%;
         margin: 1.5rem 0;
         text-align: center;
+    }
+    .modal_details{
+        flex-direction: column;
+        align-items: center;
     }
 
     .FAQ_block{
@@ -518,6 +563,10 @@
         width: 39rem;
         margin: 0 auto;
     }
+    .modal_details{
+        flex-direction: column;
+        align-items: center;
+    }
 
 
     .FAQ_block{
@@ -569,7 +618,7 @@
     }
     /* products */
     .product_img > img {
-        width: 17.7rem;
+        width: 17.7rem !important;
     }
     .heart_icon{
         left: 15.4rem;
