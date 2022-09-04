@@ -1,6 +1,7 @@
-// // function scrollToTop () {
-// //     document . body. scrollTop 0;
-// //     document . document Element. scrollTop = 0;}
+function scrollToTop () {
+    document.body.scrollTop =  0;
+    document.documentElement.scrollTop = 0;
+  }
 
 
     // Get the modal
