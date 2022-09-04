@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="fonts/stylesheet.css">
     <script src="https://kit.fontawesome.com/057571cba5.js" crossorigin="anonymous"></script>
-   
+    <script src="js.js"></script>
     <link rel="stylesheet" href="responsive.css">
 </head>
 
@@ -21,11 +21,11 @@
             <div class="container">
                 <div class="nav">
                     <div class="logo">
-                        <p> <span>Little</span> Fashion</p>
+                        <a href="index.html"> <p> <span>Little</span> Fashion</p></a>
                     </div>
                     <div class="menu">
                         <a href="index.html">Home</a>
-                        <a href="story.html">Story</a>
+                        <a class="active" href="story.html">Story</a>
                         <a href="products.html">Product</a>
                         <a href="FAQs.html">FAQs</a>
                         <a href="contact.html">Contact</a>
@@ -81,18 +81,18 @@
                             <div class="block_popup">
                                 <div class="circle">
                                     <!-- <a  id="mybtn2" href="">+</a> -->
-                                    <button id="mybtn">+</button>
+                                    <button id="mybtn2">+</button>
                                 </div>
                                
                             </div>
-                            <div class="modal_2 " id="myModal">
+                            <div class="modal_2 " id="myModal2">
                              
                                 <div class="modal_details_2">
                                     
                                     <!-- <img src="https://img.icons8.com/fluency-systems-filled/34/717275/delete-sign.png"/> -->
                                     <!-- <button type="button" class="exit" data-bs-dismiss="modal" aria-label="exit"></button> -->
                                     <div class="modal_2_titel">
-                                        <span class="close"></span>
+                                        <span class="exit"></span>
                                        
                                         <h2>Don Haruko</h2>
 
@@ -248,7 +248,7 @@
             <div class="footer_bg">
                 <div class="footer_content container">
                     <div class="footer_col_1">
-                        <h4> <a href="">Little</a> Fashion</h4>
+                        <h4> <a href="index.html">Little</a> Fashion</h4>
                         <p class="copyrigth">Copyright © 2022 </p>
                        
                         <p>Designed by <a href="">Tooplate</a> </p>
@@ -293,15 +293,15 @@
 
 
 
-<script>
+<!-- <script>
       // Get the modal
-      var modal = document.getElementById("myModal");
+      var modal = document.getElementById("myModal2");
         
         // Get the button that opens the modal
-        var btn = document.getElementById("myBtn");
+        var btn = document.getElementById("myBtn2");
         
         // Get the <span> element that closes the modal
-        var span = document.getElementsByClassName("close")[0];
+        var span = document.getElementsByClassName("exit")[0];
         
         // When the user clicks the button, open the modal 
         btn.onclick = function() {
@@ -323,7 +323,7 @@
         }
 
 </script>
-   
+    -->
 </body>
 
 </html>
