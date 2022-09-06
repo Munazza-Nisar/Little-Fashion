@@ -214,6 +214,7 @@
      .d_menu{
         top: 3.2rem;
         width: 100%;
+        z-index: -1;
      }
     .dropdown::after{
         padding-left: 0rem ;
@@ -231,12 +232,13 @@
         width: 100%;
         margin: 1.5rem 0;
         text-align: center;
+        z-index: 1;
     }
     .modal_details{
         flex-direction: column;
         align-items: center;
     }
-    /*......................................... cart page.........................................  */
+    /*......................................... login page.........................................  */
     .login_pg{
         margin: 3rem 2rem;
     }
@@ -258,10 +260,7 @@
     .modal_img > img {
         width: 100%;
     }
-    .close{
-        top: 0.6rem;
-        left: 27rem;
-    }
+ 
 
 
 
@@ -274,6 +273,9 @@
         position: absolute;
         left: 27rem;
        
+    }
+    .top_scroll{
+        top: 35rem;
     }
 }
 
@@ -413,22 +415,24 @@
      }
      .d_menu{
         width: 100%;
+        z-index: -1;
      }
      .dropdown::after{
         padding-left: 0rem !important;
      }
     .top_btn > a{
-        /* display: block; */
         width: 100%;
     }
-   
+  
     .top_btn > a:first-child > small {
         padding-left: 22.5rem;
     }
     .top_btn > button{
+        /* display: block; */
         width: 100%;
         margin: 1.5rem 0;
         text-align: center;
+        z-index: 1;
     }
     .modal_details{
         flex-direction: column;
@@ -436,10 +440,6 @@
     }
     .modal_img > img {
         width: 100%;
-    }
-    .close{
-        top: 0.6rem;
-        left: 39rem !important;
     }
 
     .FAQ_block{
@@ -591,10 +591,7 @@
     .modal_img > img {
         width: 100%;
     }
-    .close{
-        left: 38rem;
-    }
-
+  
     .FAQ_block{
         margin: 7rem 2rem;
         width: 45rem;
@@ -604,7 +601,9 @@
         left: 43rem;
        
     }
-
+    .top_scroll{
+        top: 57rem;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
@@ -644,12 +643,13 @@
         width: 35rem;
     }
     /* products */
-    .product_img > img {
-        width: 17.7rem !important;
+    .product_img >a img  {
+        width: 18rem !important;
     }
     .heart_icon{
         left: 15.4rem;
     }
+ 
      /* footer */
      .footer_bg {
         padding: 3rem;
@@ -664,8 +664,12 @@
     .story_img > img {
         width: 32rem;
     }
-    .ideas_heading{
-
+    .team_box{
+        padding: 1rem;
+        gap: 0rem;
+    }
+    .block_info {
+        padding: 1rem 1.5rem 1rem 0.5rem;
     }
       /*......................................... contact page.........................................  */
     .contact {
@@ -691,5 +695,12 @@
     }
     .top_btn > a:last-child {
         padding: 1rem 1.5rem;
+    }
+    .dropdown::after {
+        padding-left: 3rem;
+    }
+    .top_btn > button {
+        padding: 1rem 1.5rem;
+        margin-left: 0.5rem;
     }
 }
