@@ -276,6 +276,7 @@ span{
 }
 .retail_img > img{
     width: 41.313rem;
+    vertical-align: bottom;
 }
 .retail_text{
     flex-basis: 51rem;
@@ -307,7 +308,7 @@ span{
     content: "\f061";
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
-    padding-left: 0.2rem;
+    padding-left: 0.4rem;
     
 }
 /* products */
@@ -328,10 +329,9 @@ span{
 }
 .product_img >a img{
     width: 22.7rem !important;
+    vertical-align:bottom
 }
-/* .product_img > img:hover{
-    box-shadow: 0 1rem 3rem rgba(0,0,0,.175);
-} */
+
 .product_info{
     padding: 1.8rem 1rem;
     display: flex;
@@ -339,6 +339,7 @@ span{
 }
 .product_txt> h5:hover{
     color: var(--primary-color);
+    cursor: pointer;
 }
 .product_txt> p{
     color: var(--p-color);
@@ -598,37 +599,11 @@ span{
     right: 0;
     z-index: 1;
   }
-  /* .exit::after{
-    cursor: pointer;
-    font-family: "Font Awesome 5 Free";
-    content: "\f00d";
-    font-weight: 900;
-    color: var(--p-color);
-    font-size: 3rem;
-    z-index: 1;
-    
-  } */
+  
   .exit::after:hover{
     color: #212529;
   } 
-/* .modal_details_2 >.exit{
-    background-color: var(--white-color);
-    border: none;
-    position: relative;
-    top: 1rem;
-    left: 46rem;
-    right: 0;
-  }
-  .modal_details_2 >.exit::after{
-    cursor: pointer;
-    font-family: "Font Awesome 5 Free";
-    content: "\f00d";
-    font-weight: 900;
-    color: var(--p-color);
-    font-size: 3rem;
-    z-index: 1;
-    
-  } */
+
 /* block starts */
 .block_img > img{
     width: 5.313rem;
@@ -740,8 +715,8 @@ span{
     font-size: 1rem;
 }
 .form >input:focus{
-    border-color: #86b7fe;
-    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    border-color: #ff44006b;
+    box-shadow: 0 0 0 0.25rem #ff44003d;
 }
 .form > textarea{
     display: block;
@@ -757,8 +732,8 @@ span{
     font-family: var(--body-font-family);
 }
 .form >textarea:focus{
-    border-color: #86b7fe;
-    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    border-color: #ff4400b5;
+    box-shadow: 0 0 0 0.25rem #ff440094;
 }
 .button{
     margin: 2.5rem 0;
@@ -817,7 +792,10 @@ span{
     color: var(--primary-color);
 }
 .company_block_1> a:hover::after{
-    content: "->";
+    content: "\f061";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    padding-left: 0.4rem
 }
 .company_address:last-child .company_block_2{
     padding-left: 3rem;
@@ -923,7 +901,7 @@ span{
     
     background-color: var(--white-color);
     border: 1px solid #dee2e6;
-    width: 16rem;
+    width: 15.44rem;
     
     opacity: 0;
  }
@@ -934,9 +912,7 @@ span{
     background-color: var(--bs-blue);
 
  }
- .dropdown.active:focus{
-    border: 0.33rem solid #a2e8f7;
- }
+ 
  .dropdown:focus + .d_menu{
     opacity: 1;
  }
@@ -1011,19 +987,7 @@ span{
     fill: #000000;
     
   }
-  /* .close::after{
-    cursor: pointer;
-    font-family: "Font Awesome 5 Free";
-    content: "\f00d";
-    font-weight: 900;
-    color: var(--p-color);
-    font-size: 3rem;
-    z-index: 1;
-    
-  }
-  .close::after:hover{
-    color: #212529;
-  }  */
+  
  
 .modal{
     display: none;
@@ -1062,27 +1026,7 @@ span{
     from {top:-300px; opacity:0}
     to {top:0; opacity:1}
   }
-  /* .modal-content >.close{
-    background-color: var(--white-color);
-    border: none;
-    position: relative;
-    top: 1rem;
-    left: 46rem;
-    right: 0;
-  }
-  .modal-content >.close::after{
-    cursor: pointer;
-    font-family: "Font Awesome 5 Free";
-    content: "\f00d";
-    font-weight: 900;
-    color: var(--p-color);
-    font-size: 3rem;
-    z-index: 1;
-    
-  }
-  .modal-content >.close::after:hover{
-    color: #212529;
-  } */
+
  /*......................................... login page.........................................  */
  .login_pg{
     margin: 7rem 0;
@@ -1101,8 +1045,8 @@ span{
     color: #212529;
  }
  .login_form > input:focus{
-    border-color: #86b7fe;
-    box-shadow: 0 0 0 0.25rem rgb(13 110 253 / 25%);
+    border-color: #ff4400b5;
+    box-shadow: 0 0 0 0.25rem #ff440094;
  }
  .login_form >a{
     display: block;
@@ -1192,9 +1136,7 @@ span{
 .FAQ_heading{
     padding: 2rem 0;
 }
-/* .FAQ_link{
-    border-bottom: 1px solid var(--grey-color);
-} */
+
 .FAQ_dropdown>button{
     font-size: 1.5rem;
     font-weight: var(--font-weight-normal);
@@ -1239,7 +1181,7 @@ span{
     transition: 0.4s;
   }
   .accordion.active{
-    color: #0c63e4;
+    color: var(--primary-color);
    
   }
   .accordion::after {
@@ -1263,13 +1205,17 @@ span{
   }
   .top_scroll{
     position: fixed;
-    right: 3rem;
-    top: 29rem;
+    left: 50%;
+    top: 50%;
+    right: 4rem;
+    bottom: 4rem;
+    transform: translate(50%, 50%);
     background-color: #ffffff00;
     border: none;
     cursor: pointer;
    }
-   .top_scroll> img:hover{
-     color: #FF4400;
+   .top_scroll> img{
+    background-color: white;
+    border-radius: 0.3rem;
    }
   

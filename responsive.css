@@ -275,7 +275,11 @@
        
     }
     .top_scroll{
-        top: 35rem;
+        right: 3rem;
+    }
+    .top_scroll > img{
+        width: 2rem;
+        
     }
 }
 
@@ -601,9 +605,7 @@
         left: 43rem;
        
     }
-    .top_scroll{
-        top: 57rem;
-    }
+   
 }
 
 @media (min-width: 992px) and (max-width: 1024px) {
